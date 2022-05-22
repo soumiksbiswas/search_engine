@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('./Screenshot 2022-05-13 002447.jpg');
+    background-size: 1541px 883px;
+    background-repeat: no-repeat;
+}
+
+.content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head{
+    color: white;
+    font-size: 80px;
+    /* font-family: sans-serif; */
+    font-family: 'Rubik Glitch', cursive;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: unset;
+}
+
+#search{
+    font-size: 15px;
+    padding: 10px;
+    width: 500px;
+    border-top-left-radius: 10px;
+    border: none;
+}
+
+.btn{
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-bottom-right-radius: 10px;
+    background-color: #2196F3;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #0b7dda;;
+}
