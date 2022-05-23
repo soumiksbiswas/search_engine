@@ -2,7 +2,9 @@ const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const sw = require('stopword');
-const lemmatizer = require('lemmatizer');
+// const SpellCorrector = require('spelling-corrector'); 
+// var spellCorrector = new SpellCorrector();
+// spellCorrector.loadDictionary();
 
 const readFileLines = filename =>
     fs.readFileSync(filename)
@@ -37,7 +39,7 @@ app.post('/search', urlencodedParser, function (req, res) {
     
     let idf = ((readFileLines('./idf.txt'))[0].split(' ')).map(Number);
     
-    let lines = readFileLines('./tf_idf.txt');  // changes made in file name
+    let lines = readFileLines('./tf_idf.txt'); 
     
     let magnitudes = ((readFileLines('./magnitude.txt'))[0].split(' ')).map(Number);
     
@@ -55,8 +57,6 @@ app.post('/search', urlencodedParser, function (req, res) {
     queryStr = query_str.toLowerCase().split(' ');
 
     let words = sw.removeStopwords(queryStr);
-
-    // words = lemmatizer.lemmatizer
 
     let no_of_word_in_query = words.length;
 

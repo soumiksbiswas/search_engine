@@ -10,6 +10,7 @@
     "lemmatizer": "^0.0.1",
     "nltk": "^0.0.1",
     "remove-stopwords": "^1.0.3",
+    "spelling-corrector": "^3.0.0",
     "stopword": "^2.0.2"
   },
   "devDependencies": {},
