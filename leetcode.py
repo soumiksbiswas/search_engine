@@ -22,8 +22,8 @@ for i in range(1,45,1):
 
     for ques in all_ques_div:
         urls.append("https://leetcode.com"+ques['href'])
-        st = ques.text
-        newstring = ''.join([i for i in st if not i.isdigit()])
+        st = ques.text # 1. Two Sum
+        newstring = ''.join([i for i in st if not i.isdigit()]) 
         titles.append(newstring.replace(". ",""))
 
 with open("lt_url.txt", "w+") as f:
