@@ -25,8 +25,6 @@ for i in range(1,45,1):
         st = ques.text
         newstring = ''.join([i for i in st if not i.isdigit()])
         titles.append(newstring.replace(". ",""))
-        if(len(urls)==6): # for now, we need only 6 samples
-            break
 
 with open("lt_url.txt", "w+") as f:
     f.write('\n'.join(urls))
