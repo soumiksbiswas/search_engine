@@ -2,9 +2,6 @@ const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const sw = require('stopword');
-// const SpellCorrector = require('spelling-corrector'); 
-// var spellCorrector = new SpellCorrector();
-// spellCorrector.loadDictionary();
 
 const readFileLines = filename =>
     fs.readFileSync(filename)
@@ -17,7 +14,6 @@ fs.readFileSync(filename)
 
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
-
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -27,7 +23,7 @@ app.listen(process.env.PORT || 3000);
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.render('homepage')
+    res.render('homepage');
 });
 
 
@@ -149,5 +145,5 @@ app.post('/search', urlencodedParser, function (req, res) {
 
 
 app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
+    res.status(404).render('404');
 });

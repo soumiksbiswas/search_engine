@@ -1,0 +1,68 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 80px;
+    padding-left: 80px;
+    font-size: larger;
+    color: white;
+    background-color: black;
+}
+h1{
+    font-family: 'Alegreya Sans SC';
+    font-size: 60px;
+    display: inline;
+    border: solid 3px white;
+    text-align: center;
+    padding: 10px;
+}
+
+#line_break{
+    margin-top: 60px;
+}
+
+#line_break ul {
+    display: table;
+
+}
+
+#line_break li{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.btn{
+    top: 0;
+    left: 0;
+    border: solid 3px white;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: rgb(187, 187, 187);
+    border-radius: 4px;
+
+}
+
+#myDiv{
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: none;
+}
+
+a{
+    color: white;
+    padding: 0px;
+}
+
+.noresults{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+a:hover{
+    color: gray;
+}
