@@ -12,7 +12,7 @@ Project is created with:
 * EJS
 
 ## Basic details
-I have performed web scraping on Leetcode problem set using Beautiful Soup 4 and filtered the search results for the query entered by the user using TF-IDF (Term Frequency= Inverse Document Frequency) algirithm. I have also removed the stop words from the documents as well as the query string. I have also performed Lemmatization on the words to convert different forms of the words into their root form. I have used EJS as the template engine.
+I have performed web scraping on Leetcode problem set using Beautiful Soup 4 and filtered the search results for the query entered by the user using TF-IDF (Term Frequency= Inverse Document Frequency) algorithm. I have also removed the stop words from the documents as well as the query string. I have also performed Lemmatization on the words to convert different forms of the words into their root form. I have used EJS as the template engine.
 
 ## Features
 - If the query does not match with any problem present in our database, it will display the necessary error message to the user.
